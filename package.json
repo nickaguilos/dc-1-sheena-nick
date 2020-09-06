@@ -1,0 +1,17 @@
+{
+  "name": "ad-sass-framework",
+  "version": "1.0.0",
+  "description": "Refactor of the Autodeal Sass Framework to use newer versions of SASS and have a more object oriented approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Aguilos , Kaye Casalla",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-mode": "^1.0.2"
+  }
+}

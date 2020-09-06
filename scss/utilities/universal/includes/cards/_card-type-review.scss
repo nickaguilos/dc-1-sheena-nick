@@ -1,0 +1,14 @@
+.card {
+	// Review Card
+	&#review {
+	    .score {
+	        background-color: #135b94;
+	        border-radius: $default-border-radius;
+	        color: $white;
+	    }
+	    .rating-and-stars {
+	        justify-content: flex-start;
+	        align-items: center;
+	    }
+	}
+}

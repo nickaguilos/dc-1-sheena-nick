@@ -1,0 +1,19 @@
+.card {
+	&#email-subscription {
+	    background-color: $gray2;
+	    color: $white;
+	    width: 800px;
+	    margin: 0 auto;
+
+	    .small{
+	        a:hover{
+	            opacity: 1;
+	            color: $white!important;
+	        }
+	    }
+
+	    @media screen and (max-width: $medium) {
+	        width: auto;
+	    }
+	}
+}

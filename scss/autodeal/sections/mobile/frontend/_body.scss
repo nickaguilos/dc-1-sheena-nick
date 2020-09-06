@@ -1,0 +1,309 @@
+// Body Rules, Element Specific Overrides in body
+
+&.stickyopen {
+    margin-top: 60px;
+}
+
+
+main {
+    .participatingdealers {
+
+        nav a { font-size: 14px; }
+
+        .name { width: 142px; }
+    }
+}
+
+
+// Incentive Badge
+.incentive {
+    img {
+        width: 80px;
+    }
+}
+
+
+// Participating Dealerships
+.participatingdealers .icons span {
+    color: $platinum;
+    transition: color 0.2s;
+
+    &:hover { color: $gray; }
+}
+
+#dealershipdetailmodal, #dealregions, #dealer.content {
+    header, header a {
+        color: $white;
+    }
+
+    .button.tertiary {
+        color: $gray;
+    }
+
+    .name { width: 142px; }
+
+    .buttonwrapper {
+        border-bottom: 1px solid $brandhighlight;
+    }
+}
+
+// Register Form In Sidebar
+aside .register form div {
+    width: 100% !important;
+}
+
+//loan calculator
+#loancalculator {
+    nav {
+        width: 100%;
+        top: 50%;
+    }
+
+    .financialresults {
+        margin-left: -10px;
+        margin-right: -10px;
+
+    }
+}
+
+
+#testdriveform {
+    background-color: $darkgray;
+    
+    header {
+        color: $white;
+    }
+}
+
+#top-rated-agents {
+    font-size: 14px;
+
+    .grid-agent-details {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+    }
+    
+    .reviews, .stars {
+        margin-top: -5px;
+    }
+}
+
+/*
+
+	Major Sections
+
+    Contents:
+    Full Width Email Subscription
+    Notification Modal
+    Car Loan Bank Logos
+    Ad Banner
+    Inactive Page
+*/
+
+// Ad Banner
+.ad-banner{
+    border-radius: 3px;
+
+    a { display: block; }
+    img { width: 100%; }
+
+    .banner-label {
+        top: 10px;
+        left: 10px;
+        font-size: .6em;
+        font-weight: bold;
+        padding: 4px 10px;
+        line-height: 1.375em;
+        background-color: $black;
+        color: $white;
+        border-radius: $default-border-radius;
+    }
+}
+
+
+.typeahead-search {
+    z-index: index($elements, generic2);
+    
+    input {
+        padding-left: 30px !important;
+    }
+
+    span {
+        top: 10px;
+        left: 10px;
+        font-size: 18px;
+        opacity: .7;
+    }
+}
+
+/* Inactive Pages */ 
+.alert-inactive-header {
+    background-color: $white;
+    
+    .inactive-message-background {
+        background-color: $red2;
+        color: $white;
+    }
+
+    .inactive-hero-image {
+        flex-basis: 30%;
+    }
+
+    .inactive-hero-content {
+        flex-basis: 70%;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+        grid-gap: 30px 15px;
+    }
+
+    .stars {
+        margin-top: -8px;
+
+        a { font-size: 18px; }
+    }
+
+    .inactive-bottom-section {
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        span {
+            top: 13px;
+            left: 10px;
+            font-size: 18px;
+            opacity: .7;
+        }
+
+        input {
+            padding-left: 30px !important;
+        }
+    }
+}
+
+// Full Width Email Subscription
+#email-subscribe-form {
+    background: url('/images/design/email-subscription-bg.jpg') no-repeat $grayhighlight;
+    background-size: cover;
+    margin: 20px 0 50px;
+
+    img {
+        width: 150px;
+    }
+
+    input[type="text"], p {
+        margin: 0 auto;
+    }
+
+    .card {
+    	max-width: 700px;
+    	margin: 50px auto;
+    }
+}
+
+/*
+    Notifications Modal
+    Created By: Aj
+*/
+
+// Begin
+#notification-on-load {
+    font-size: 14px;
+
+    .dropdown {
+        width: 320px;
+        right: 5%;
+        top: 10px;
+        // @include box-shadow-3();
+    }
+
+    .arrow {
+        right: 7%;
+    }
+
+    @media screen and ( max-width: $large ) {
+        .dropdown {
+            right: 5%;
+        }
+    }
+
+}
+
+#notifications-list-display {
+    z-index: index($elements, topMost);
+
+    .content {
+        font-size: 13px;
+    }
+}
+
+#car-model-video {
+    .more-videos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+    }
+}
+
+.notification-list-item {
+    padding-bottom: 20px;
+
+    > div {
+        margin-left: 45px;
+
+        small {
+            display: block;
+            margin-bottom: -5px;
+        }
+
+        span.positionabsolute {
+            right: 0;
+            top: 50%;
+        }
+    }
+
+    .notification-list-title {
+        width: 90%;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/*
+    Added by AJ for the test drive form variation
+*/ 
+#request-test-drive {
+    .pickadate__holder {
+        position: relative;
+
+        .pickadate__frame {
+            position: absolute;
+            top: 0;
+            z-index: index($elements, generic2);
+        }
+
+        .pickadate__button--clear, .pickadate__button--today {
+            color: $gray;
+        }
+    }
+}
+// End
+
+/* Car Loan Bank Logos*/
+#carloan-banks {
+    .security-bank{
+        img {
+            width: 100px;
+        }
+    }
+}
+
+/* For Cookie Alert*/ 
+// #cookie-bar {
+//     width: 80%;
+//     margin-bottom: 20px;
+// }

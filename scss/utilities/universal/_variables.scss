@@ -1,0 +1,114 @@
+/*
+    Variables and Z Index Stacking
+*/
+
+// Breakpoints
+$xlarge: 1300px;
+$large: 1000px;
+$medium: 850px;
+$small: 700px;
+$xsmall: 400px;
+
+// Site Max Width
+$siteMaxWidth: $large;
+
+// Typography Variables
+$basesize: 16px;
+$basefont:  "Inter UI", "Helvetica Neue", sans-serif;
+$secondaryfont: "Helvetica Neue", sans-serif;
+$accentfont: $basefont;
+$monospacefont: monospace;
+$alternativefont: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", "Roboto", "Open Sans","Helvetica Neue", sans-serif !important;
+
+// Z Index Property Rules
+// Do not touch this unless you are updating the list to include a new element
+$elements: generic, generic2, generaloverlay, carimageandtitle, dealershipnav, dealershiphead, gallerycontrols, tooltip, dropdown, bx-wrapper, badges, orb, herooverlay, stickycta, floatingnav, comparebar, notifshade, sitehead, modal, overlay, overlaycontent, slideMenu, slideMenu2, bottomsheet, topMost;
+
+// Border Radius
+$default-border-radius: 3px;
+
+// Transition
+$default-transition-duration : 0.3s;
+
+
+// Header Height
+$stickyheadheight: 6.125em; // Change this to reflect height of your sticky header
+
+// Color Variables;
+	$card-bg: #fff;
+	// Blues
+	$blue: #1D7AC8;
+	$bluehighlight: #66B1F0;
+	$skyblue: #57CEFF;
+	$pastelblue: #84B9DF;
+	$bluegreen: #1E8481;
+	$navyblue: #3B627C;
+
+	// Indigo
+	$indigo: #58588C;
+	$violet: #74526C;
+
+	// Hots
+	$orange: #FF6725;
+	$orange2: #FF7A30;
+	$pastelorange: #FFAA60;
+	$yellow: #F5A623;
+	$paleyellow: #FFE4A8;
+	$red: #DC2B1B;
+	$red2: #F5675B;
+	$bpired: #9f130d;
+	$bronze: #BD752E;
+	$notebrown: #8E5D10;
+	$lightbrown: #C19875;
+	$gold: #D8B600;
+
+	// Cools
+	$pastelgreen: #E3F9ED;
+	$green: #00cc41;
+	$green2: #0B8A0B;
+	$darkgreen: #1aac35;
+	$yellowgreen: #7ED321;
+
+	// Grays
+	$white: #FFFFFF;
+	$grayhighlight: #F5F5F5;
+	$lightgray: #EEEEEE;
+	$platinum: #E7E7E7;
+	$ash: #AAAAAA;
+	$aluminum: #888;
+	$gray: #555;
+	$gray2: #4A4A4A;
+	$darkgray: #222;
+	$black: #000;
+	$silver: #C0C0C0;
+
+	// Other Brand Colors
+	$facebookblue: #4761A2;
+	$twitterblue: #1F9BD3;
+	$googlegray: $gray;
+	$googleplusred: #D34836;
+	$youtubered: #DC2B1B;
+	$pinterestred: #CB2027;
+	$linkedinblue: #1B86BC;
+	$bdoblue: #0a1564;
+
+	// Brand
+	$brand: #FF4906 !default;
+	$brandhighlight: #FF8700 !default;
+	$brand-highlight: #FF8700 !default;
+	$orange3: #FFC88A;
+	$paleorange: #D66E48;
+
+	// Border Colors
+	$border: $platinum;
+	$darkborder: #333;
+
+	// Link Color
+	$linkcolor: $darkgray;
+
+	// Copy Color
+	$copycolor: #111;
+
+	// Body Background
+	$bodybackground: #fafafa;
+

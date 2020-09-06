@@ -1,0 +1,35 @@
+/*
+	Body Css - Desktop
+	Created by: Kaye Casalla
+	Date: Nov 18, 2019
+*/
+
+html {
+	background: #fafafa;
+	// scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter UI", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    background: #FFF;
+    margin: 0;
+    line-height: 1.8em;
+    -webkit-text-size-adjust: none;
+    color: #222;
+    min-width: 800px;
+
+    &.modalopen {
+      	overflow: hidden;
+    }
+}
+
+// Hide Google Trackers
+iframe[name='google_conversion_frame'] {
+    height: 0 !important;
+    width: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    margin-top: -13px;
+    float: left;
+}

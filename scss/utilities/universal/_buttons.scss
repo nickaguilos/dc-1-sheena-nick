@@ -1,0 +1,313 @@
+// Buttons
+@use 'utilities/universal/variables';
+
+button, .button {   
+    border-radius: variables.$default-border-radius;
+    transition: all variables.$default-transition-duration;
+    width: auto; 
+    padding: 0.5em 1em; 
+    background-color: variables.$brand;
+    color: variables.$white; 
+    border: 1px solid variables.$brand;
+    cursor: pointer; 
+    display: inline-block;  
+    font: bold 16px variables.$basefont;
+    text-align: center; 
+    text-decoration: none; 
+    text-transform: capitalize;
+    position: relative;
+
+    &:hover, &:focus {
+        text-decoration: none;
+        background: variables.$brandhighlight;
+        color: variables.$white !important;
+        border-color: variables.$brandhighlight;
+    }
+
+    &:focus {
+        outline: none;
+        transition: none;
+    }
+
+    &:active {
+        top: 1px;
+    }
+
+    // Sizes
+    &.large { 
+        font-size: 20px; 
+    }
+
+
+    &.expand { 
+        width: 100%; 
+    }
+
+    // Radii
+    &.circle {
+        border-radius: 100px;
+    }
+
+    // Types
+    &.small {
+        font-size: 14px;
+        padding: 7px 14px 8px;
+    }
+
+    &.link {
+        background: transparent;
+        color: variables.$gray;
+        border: none;
+
+        span:first-of-type {
+            text-decoration: underline;
+        }
+
+        &:hover {
+           background-color: variables.$grayhighlight;
+           color: variables.$gray !important;
+        }
+
+        &.white {
+            color: variables.$white;
+        }
+
+        &.disabled {
+            background: transparent !important;
+            color: #CCC !important;
+            opacity: 1;
+        }
+    }
+
+    &.secondary {
+        background: variables.$darkgray;
+        border: 1px solid variables.$darkgray;
+        color: variables.$white;
+        
+        &:hover, &:focus { 
+            background-color: variables.$aluminum;
+            border-color: variables.$aluminum;
+        }
+    }   
+
+    &.tertiary, &.bordered {
+        background-color: transparent;
+        border: 1px solid variables.$gray;
+        color: variables.$gray;
+
+        &:hover, &:focus { 
+            border-color: variables.$ash;
+            color: variables.$ash !important;
+        }
+
+        &.brandhighlight {
+            border-color: variables.$brandhighlight;
+            color: variables.$brandhighlight;
+
+            &:hover, &:focus {
+                border-color: variables.$orange3;
+                color: variables.$orange3;
+            }
+        }
+
+        &.white {
+            border-color: variables.$white;
+            color: variables.$white;
+
+            &:hover, &:focus {
+                border-color: variables.$ash;
+                color: variables.$ash;
+            }
+        }
+
+        &.with-actions {
+            padding-left: 29px;
+            padding-right: 29px;
+        }
+    } 
+
+    // Colors / Brand Specific
+
+    &.red, &.danger {
+        background: variables.$red;
+        border: 1px solid variables.$red;
+    }
+
+    &.green, &.success {
+        background: variables.$green;
+        border: 1px solid variables.$green;
+
+        &:hover, &:focus { 
+            background-color: variables.$green2; 
+        }
+    }
+
+    &.bdobrand {
+        background: variables.$bdoblue;
+        border: variables.$bdoblue;
+        &:hover, &:focus { 
+            background-color: lighten(variables.$bdoblue, 20); 
+        }
+    }
+
+    // Facebook 
+    &.facebook {
+        background: variables.$facebookblue;
+        border: variables.$facebookblue;
+            &:hover, &:focus { 
+                background-color: #516eb7; 
+            }
+    }
+
+    // Loading 
+    &.loading {
+        background: url('/images/icons/preloader.gif') center center no-repeat variables.$lightgray;
+        background-size: 20px;
+        padding: 20px;
+        min-width: 195px;
+    }
+}
+
+.disabled {
+    cursor: default;
+    background: variables.$platinum !important;
+    color: variables.$ash !important;
+    border: none !important;
+
+    &:hover, &:focus { 
+        background: variables.$platinum !important;
+        box-shadow: none; 
+    }
+}
+
+// Comparison
+.comparisonbrand {
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+// Button Group
+.segmentedbutton {
+    width: auto;
+    overflow: hidden;
+    margin-bottom: 1em;
+    border-radius: variables.$default-border-radius;
+    border: 1px solid variables.$ash;
+
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: bold;
+
+    &.small a { 
+        font-size: 11px; 
+        padding: 3px;
+    }
+
+    &.circle {
+        border-radius: 100px;
+    }
+
+    a {
+        width: 34%;
+        padding: 0.438rem 0.938rem;
+        text-align: center;
+        border-right: 1px solid variables.$gray;
+        font: 0.875em variables.$basefont;
+        color: variables.$gray;
+
+        &:last-of-type {
+            border-right: none;
+        }
+
+        &:hover {
+            background: variables.$platinum;
+        }
+
+        &.active {
+            background-color: variables.$lightgray;
+        }
+    }
+
+    &.dark {
+        border-color: variables.$darkgray;
+
+        a {
+            color: variables.$gray;
+
+            &:hover {
+                background: variables.$ash;
+                color: variables.$white;
+            }
+
+            &.active {
+                background-color: variables.$darkgray;
+                color: variables.$white;
+            }
+        }
+    }
+
+    &.white {
+        background-color: variables.$white;
+        border-color: variables.$border;
+
+        a {
+            border-color: variables.$border;
+        }
+    }
+
+    &.two {
+        a { width: 50%; }
+    }
+}
+
+// Stacked Buttons
+.buttonstack {
+    .button, button {
+        margin-bottom: 0.5em;
+    }
+}
+
+// Sticky CTA
+.stickycta {
+    background: variables.$white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: index(variables.$elements, stickycta);
+
+    select {
+        margin: 0;
+    }
+
+    .button {
+        width: 49%;
+    }
+
+    &.one {
+        .button { width: 100% !important };
+    }
+
+    &.three {
+        .button {
+            width: 32%;
+        }
+    }
+
+    // This is for mobile devices with no bezel
+    @media only screen and (device-height: 811px) {        
+        .card {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+// Tag 
+.tag {
+    font-size: 0.75em;
+    color: variables.$gray;
+    background-color: variables.$lightgray;
+    padding: 0.5em 1em;
+    border-radius: variables.$default-border-radius;
+}

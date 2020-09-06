@@ -1,0 +1,13 @@
+&.new {
+    p {
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+
+    .price-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 55px;
+    }
+}

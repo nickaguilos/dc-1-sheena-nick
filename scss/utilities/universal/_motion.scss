@@ -1,0 +1,633 @@
+/*
+	Motion Classes and properties
+	Started Jan 24, 2019 by Nick Aguilos
+*/
+
+@use 'utilities/universal/variables';
+
+// Progress Bar
+::webkit-progress-value {
+	transition: all variables.$default-transition-duration;
+}
+
+.motion-slide-from-top {
+	opacity: 0;
+	animation: slide-from-top 0.8s ease-in-out 1s 1 normal forwards;
+}
+
+
+@keyframes slide-from-top {
+    0% {
+        top: -500px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+// Entrance Classes
+
+// Fade In 
+.fade-in {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+  
+  @keyframes fade-in {
+	from {
+	  opacity: 0;
+	}
+  
+	to {
+	  opacity: 1;
+	}
+}
+
+.fadeInUp {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes fadeInUp {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(0, 100%, 0);
+	  transform: translate3d(0, 100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+.fadeInDown {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInDown {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes fadeInDown {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+.fadeInLeft {
+	-webkit-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInLeft {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(-100%, 0, 0);
+	  transform: translate3d(-100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes fadeInLeft {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(-100%, 0, 0);
+	  transform: translate3d(-100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInRight {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(100%, 0, 0);
+	  transform: translate3d(100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes fadeInRight {
+	from {
+	  opacity: 0;
+	  -webkit-transform: translate3d(100%, 0, 0);
+	  transform: translate3d(100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+// slide In
+
+// NOTE: in able to use these classes properly
+//		 Immediate parent of this should have css property
+//		 overflow : hidden; 
+
+
+.slideInUp {
+	-webkit-animation-name: slideInUp;
+	animation-name: slideInUp;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInUp {
+	from {
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes slideInUp {
+	from {
+	  -webkit-transform: translate3d(0, 100%, 0);
+	  transform: translate3d(0, 100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+.slideInDown {
+	-webkit-animation-name: slideInDown;
+	animation-name: slideInDown;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInDown {
+	from {
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes slideInDown {
+	from {
+	  -webkit-transform: translate3d(0, -100%, 0);
+	  transform: translate3d(0, -100%, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+.slideInLeft {
+	-webkit-animation-name: slideInLeft;
+	animation-name: slideInLeft;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInLeft {
+	from {
+	  -webkit-transform: translate3d(-100%, 0, 0);
+	  transform: translate3d(-100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes slideInLeft {
+	from {
+	  -webkit-transform: translate3d(-100%, 0, 0);
+	  transform: translate3d(-100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+.slideInRight {
+	-webkit-animation-name: slideInRight;
+	animation-name: slideInRight;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInRight {
+	from {
+	  -webkit-transform: translate3d(100%, 0, 0);
+	  transform: translate3d(100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+  
+  @keyframes slideInRight {
+	from {
+	  -webkit-transform: translate3d(100%, 0, 0);
+	  transform: translate3d(100%, 0, 0);
+	}
+  
+	to {
+	  opacity: 1;
+	  -webkit-transform: translate3d(0, 0, 0);
+	  transform: translate3d(0, 0, 0);
+	}
+}
+
+
+
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	opacity: 1;
+}
+
+.animated.infinite {
+	animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+	animation-duration: 1s;
+}
+
+.fadeInRightSmall {
+	animation-name: fadeInRightSmall;
+	animation-duration: 1s;
+}
+
+
+@keyframes fadeInRightSmall {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeInLeftSmall {
+	animation-name: fadeInLeftSmall;
+	animation-duration: 1s;
+}
+
+
+@keyframes fadeInLeftSmall {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fadeInUpSmall {
+	animation-name: fadeInUpSmall;
+	animation-duration: 1s;
+	transform-origin: 50% 100%;
+
+}
+
+@keyframes fadeInUpSmall {
+	0% {
+		opacity: 0;
+		transform: translateY(60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.fadeInDownSmall {
+	animation-name: fadeInDownSmall;
+	animation-duration: 1s;
+	transform-origin: 50% 100%;
+
+}
+
+@keyframes fadeInDownSmall {
+	0% {
+		opacity: 0;
+		transform: translateY(-60px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.clipInLeft {
+	animation-name: fadeInLeftSmall;
+	animation-duration: 1s;
+}
+
+.clipInRight {
+	animation-name: fadeInRightSmall;
+	animation-duration: 1s;
+}
+
+.clipInUp {
+	animation-name: fadeInUpSmall;
+	animation-duration: 1s;
+}
+
+.clipInDown {
+	animation-name: fadeInDownSmall;
+	animation-duration: 1s;
+}
+
+@supports (clip-path: polygon(0 0)) {
+	@keyframes clipInLeft {
+		0% {
+			clip-path: polygon(-10% -10%, -10% -10%, -10% 110%, -10% 110%);
+		}
+		100% {
+			clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%);
+		}
+	}
+	@keyframes clipInRight {
+		0% {
+			clip-path: polygon(110% -10%, 110% -10%, 110% 110%, 110% 110%);
+		}
+		100% {
+			clip-path: polygon(-10% -10%, 110% -10%, 110% 110%, -10% 110%);
+		}
+	}
+	@keyframes clipInUp {
+		0% {
+			clip-path: polygon(-10% 110%, -10% 110%, 110% 110%, 110% 110%);
+		}
+		100% {
+			clip-path: polygon(-10% 110%, -10% -10%, 110% -10%, 110% 110%);
+		}
+	}
+	@keyframes clipInDown {
+		0% {
+			clip-path: polygon(-10% -10%, -10% -10%, 110% -10%, 110% -10%);
+		}
+		100% {
+			clip-path: polygon(-10% 110%, -10% -10%, 110% -10%, 110% 110%);
+		}
+	}
+	.clipInLeft {
+		animation-name: clipInLeft;
+		animation-duration: 1s;
+	}
+	.clipInRight {
+		animation-name: clipInRight;
+		animation-duration: 1s;
+	}
+	.clipInUp {
+		animation-name: clipInUp;
+		animation-duration: 1s;
+	}
+	.clipInDown {
+		animation-name: clipInDown;
+		animation-duration: 1s;
+	}
+}
+
+.scaleUp {
+	-webkit-animation-name: scaleUp;
+	animation-name: scaleUp;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes scaleUp {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+  
+@keyframes scaleUp {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+.scaleDown {
+	-webkit-animation-name: scaleDown;
+	animation-name: scaleDown;
+	animation-duration: 1s;
+}
+
+@-webkit-keyframes scaleDown {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(2, 2, 2);
+		transform: scale3d(2, 2, 2);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+  
+@keyframes scaleDown {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(2, 2, 2);
+		transform: scale3d(2, 2, 2);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+
+// hover effect
+
+.iconRight{
+	span{
+		display: inline-block;
+		transition: ease all variables.$default-transition-duration;
+	}
+}
+.iconRight:hover{
+	span{
+		transform: translateX(5px);
+	}
+}
+
+.iconLeft{
+	span{
+		display: inline-block;
+		transition: ease all variables.$default-transition-duration;
+	}
+}
+.iconLeft:hover{
+	span{
+		transform: translateX(-5px);
+	}
+}
+
+.iconUp{
+	span{
+		display: inline-block;
+		transition: ease all variables.$default-transition-duration;
+	}
+}
+.iconUp:hover{
+	span{
+		transform: translateY(-5px);
+	}
+}
+
+.iconDown{
+	span{
+		display: inline-block;
+		transition: ease all variables.$default-transition-duration;
+	}
+}
+.iconDown:hover{
+	span{
+		transform: translateY(5px);
+	}
+}
+
+.toolTip{
+	position: absolute;
+    top: -39px;
+    left: 50%;
+    background: #222;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+	font-weight: normal;
+	opacity: 0;
+	transition: ease all 0.3s;
+	&:before{
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(136, 183, 213, 0);
+		border-width: 7px;
+		border-top-color: #222;
+		top: 23px;
+		left: 50%;
+		transition: ease all 0.3s;
+		margin-left: -5px;
+	}
+}
+
+.color{
+	position: relative;
+	&:hover .toolTip {
+		opacity: 1;
+	}
+}

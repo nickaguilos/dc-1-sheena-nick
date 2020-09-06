@@ -1,0 +1,55 @@
+.card {
+	&#launch {
+	    background-color: $black;
+	    color: $white;
+
+	    .image { max-height: 210px; }
+
+	    @media only screen and (min-width: 849px) and (max-width: 1000px) {
+	        .content { padding-top: 12px; }
+	    }
+
+	    @media only screen and (min-width: 500px) and (max-width: 848px) {
+	        .content {
+	            padding-top: 60px;
+
+	            > div { padding-bottom: 20px; }
+	        }
+	    }
+
+	    &.small {
+	        .image {
+	            width: 95%;
+	            top: -8px;
+	            max-height: 200px;
+	            margin: 0 auto;
+	        }
+
+	        @media only screen and (min-width: 500px) and (max-width: 848px) {
+	            .image { height: 174px; }
+
+	            .content {
+	                padding-top: 0px;
+
+	                > div { padding-bottom: 0px; }
+	            }
+	        }
+
+	         @media only screen and (min-width: 849px) and (max-width: 900px) {
+	            .image { height: 183px; }
+
+	            .content { padding-top: 0px; }
+	        }
+
+	        @media only screen and (min-width: 901px) and (max-width: 1000px) {
+	            .image {
+	                height: 192px;
+	                top: -5px;
+	            }
+
+	            .content { padding-top: 0px; }
+	        }
+	    }
+	}
+
+}

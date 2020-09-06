@@ -1,0 +1,32 @@
+// Template For Desktop Pages
+
+@use 'utilities/universal/variables';
+@use 'utilities/universal/fontface';
+@use 'utilities/universal/cards';
+@use 'utilities/desktop/override';
+@import 'utilities/universal/theme';
+
+.autodeal { //This wrapper is to set to scope styles within Autodeal pages
+	@import 'utilities/desktop/static-grid';
+	@import 'utilities/universal/icons';
+	@import 'utilities/universal/typography';
+	@import 'utilities/universal/motion';
+	@import 'utilities/universal/buttons';
+	@import 'utilities/universal/forms';
+	@import 'utilities/universal/elements';
+	@import 'utilities/universal/components';
+	@import 'utilities/universal/helpers';
+
+	// Third Party Utility Imports
+	@import 'utilities/universal/vendor/normalize';
+	@import 'utilities/universal/vendor/bxslider';
+	@import 'utilities/universal/vendor/typeahead';
+
+	// Import Specific Sections. In this case frontend desktop 
+	@import 'autodeal/sections/desktop/frontend/head';
+	@import 'autodeal/sections/desktop/frontend/foot';
+	@import 'autodeal/sections/desktop/frontend/body';
+	
+	// Example for model page - profile
+	@import 'autodeal/pages/desktop/frontend/new-cars/model/default';
+}

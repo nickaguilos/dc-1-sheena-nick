@@ -1,0 +1,106 @@
+/*
+	Model section universal css - Desktop
+	Created by: Kaye Casalla
+	Date: Nov 21, 2019
+*/
+
+@use 'utilities/universal/variables';
+
+// Gallery with a video in the slide
+.slider-gallery {
+	.with-play-button {
+		justify-content: center;
+		align-items: center;
+		.icon {
+			position: absolute;
+			font-size: 80px;
+		}
+	}
+}
+
+// Model section - Body
+.model {
+	min-width: 1080px;
+	background-color: variables.$bodybackground;
+
+	.page-header {
+		background-color: variables.$white;
+	}
+
+	#car-loan-calculator-tab {
+		.calculatorresults { font-size: 14px; }
+	}
+
+	.img-container {
+		.icon-mat-play_circle_filled {
+		    left: 45%;
+		    top: -45px;
+		    font-size: 5em;
+		}
+	}
+
+	#top-agent{
+		.slider-control{
+			z-index: 3;
+		}
+
+	.arrow-button span {
+		font-size: 18px;
+		padding: 5px;
+		box-shadow: 0 2px 10px rgba(100, 100, 100, 0.1);
+	}
+
+	.slider-control {
+		z-index: 3;
+		top: 50%;
+		width: 100%;
+
+		> a {
+			&#left-arrow { left: -28px; }
+			&#right-arrow { right: -25px; }
+		}
+	}
+		
+	}
+
+	// .axa-logo{
+	// 	img{
+	// 		width: 3.5em;
+	// 		height: auto;
+	// 		border-radius: 0px;
+	// 	}
+	// 	&.large{
+	// 		img.medium{
+	// 			width: 4em;
+	// 		}
+	// 	}
+	// }
+}
+
+// Model section - Side bar
+aside {
+	font-size: 14px;
+
+	.brand-link {
+		a > div { width: 100%; }
+
+		img {
+			width: 4em;
+			height: 4em;
+		}
+	}
+
+	.featured-dealer-name > h4 { margin-bottom: -5px; }
+
+	#carloan-form {
+		.display-flex {
+			justify-content: space-between;
+		}
+
+		.element-flex-basis {
+			flex-basis: 46%;
+		}
+	}
+}
+
+	
