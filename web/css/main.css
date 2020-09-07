@@ -1,5 +1,5 @@
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1em; }
 
 body {
@@ -21,7 +21,7 @@ a {
   margin: 0 auto;
   gap: 1.5em;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 1fr 1fr 1fr; }
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr; }
 
 #site-head {
   display: flex;
@@ -29,26 +29,30 @@ a {
   align-items: center;
   padding: 1em 0;
   grid-column: 1 / -1;
+  grid-row-start: 1;
+  margin-top: 50px;
   z-index: 1; }
+  #site-head #brand {
+    max-width: 50px; }
 
 #search-and-intro {
-  grid-column: 1 / 6; }
+  grid-column: 1 / 6;
+  grid-row-start: 3; }
 
 #hero-image {
   grid-column: 6 / 13;
   grid-row-start: 1; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  line-height: 1.3em;
+  line-height: 1em;
   font-weight: bold;
-  font-family: 'adobe garamond', serif;
-  text-transform: capitalize; }
+  font-family: "Adobe Garamond", serif; }
   @media (max-width: 320px) {
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       line-height: 1.3em; } }
 
 h1, .h1 {
-  font-size: 2.441em; }
+  font-size: 2.813em; }
 
 h2, .h2 {
   font-size: 1.953em; }
@@ -64,3 +68,32 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 0.8em; }
+
+.subheading {
+  font-size: 1.2em;
+  margin-top: -.35em;
+  opacity: 0.5;
+  line-height: 1.2em; }
+
+button, .button {
+  background-color: #0058A3;
+  color: #fff;
+  font-size: 1.125em;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  transition: all, 0.1s; }
+  button:hover, .button:hover {
+    background-color: #003E73;
+    cursor: pointer; }
+  button.round, .button.round {
+    border-radius: 100px;
+    padding: 0.5em 2em; }
+
+input[type="text"] {
+  font-size: 1.125em; }
+
+#home #search-box {
+  background: #FFFFFF;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  padding: 1em; }
