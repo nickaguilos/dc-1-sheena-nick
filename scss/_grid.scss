@@ -5,39 +5,4 @@
 	margin: 0 auto;
 	gap: 1em;
 	grid-template-columns: repeat(8, 1fr);
-	grid-template-areas:
-		"hd hd hd hd hd hd hd hd"
-		"sd sd . cn cn cn cn cn"
-		"bn bn bn bn bn bn bn bn"
-		".	.  . ft ft ft ft ."
-	;
-
-	#site-head {
-		grid-area: hd;
-	}
-
-	#content {
-		grid-area: cn;
-	}
-
-	#sidebar {
-		grid-area: sd;
-	}
-
-	#site-foot {
-		margin-top: 100px;
-		grid-area: ft;
-	}
-
-	@media screen and (max-width: 800px) {
-		padding: 1em;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-areas: 
-		"hd hd hd hd"
-		"cn cn cn cn"
-		"bn bn bn bn"
-		"sd sd sd sd"
-		"ft ft ft ft"
-		;
-	}
 }
