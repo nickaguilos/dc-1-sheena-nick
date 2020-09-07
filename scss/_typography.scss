@@ -1,16 +1,9 @@
 // Typographic Rules
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-a {
-    font-family: 'Poppins';
-}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     line-height: 1.3em;
-    font-weight: 400;
+    font-weight: bold;
     font-family: 'adobe garamond', serif;
-
+    text-transform: capitalize;
     @media (max-width: 320px) {
         line-height: 1.3em;
     }

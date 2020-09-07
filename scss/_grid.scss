@@ -3,6 +3,25 @@
 	display: grid;
 	max-width: 1200px;
 	margin: 0 auto;
-	gap: 1em;
-	grid-template-columns: repeat(8, 1fr);
+	gap: 1.5em;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 50px 1fr 1fr 1fr;
+}
+
+#site-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0;
+	grid-column: 1 / -1;
+	z-index: 1;
+}
+
+#search-and-intro {
+	grid-column: 1 / 6;
+}
+
+#hero-image {
+	grid-column: 6 / 13;
+	grid-row-start: 1;
 }
