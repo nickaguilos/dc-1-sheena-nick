@@ -1,17 +1,15 @@
 {
-  "name": "ad-sass-framework",
+  "name": "dc-1-sheena-nick",
   "version": "1.0.0",
-  "description": "Refactor of the Autodeal Sass Framework to use newer versions of SASS and have a more object oriented approach",
-  "main": "index.js",
+  "description": "",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nick Aguilos , Kaye Casalla",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.12",
-    "gulp": "^4.0.2",
-    "gulp-dart-sass": "^1.0.2",
-    "gulp-mode": "^1.0.2"
+    "gulp": "^4.0.2"
   }
 }
