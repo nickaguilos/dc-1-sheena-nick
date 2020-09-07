@@ -21,7 +21,7 @@ a {
   margin: 0 auto;
   gap: 1.5em;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 1fr 1fr 1fr 1fr; }
+  grid-template-rows: 50px 100px 1fr 1fr 1fr 1fr; }
 
 #site-head {
   display: flex;
@@ -41,7 +41,13 @@ a {
 
 #hero-image {
   grid-column: 6 / 13;
-  grid-row-start: 1; }
+  grid-row: 1 / 4;
+  max-height: 800px;
+  overflow: hidden; }
+
+#site-content {
+  grid-column: 1 / -1;
+  grid-row-start: 4; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1em;
@@ -90,10 +96,33 @@ button, .button {
     padding: 0.5em 2em; }
 
 input[type="text"] {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  border: none;
+  outline: none; }
+  input[type="text"]:focus {
+    color: #303030; }
 
-#home #search-box {
+.card {
   background: #FFFFFF;
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 100px;
+  border: 1px solid #F5F5F5;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   padding: 1em; }
+
+.grid-of-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em; }
+
+#home {
+  background: linear-gradient(to bottom, #fafafa 30%, #fff 30%); }
+  #home #search-box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+    padding: 1em 1em 1em 1.5em;
+    position: relative;
+    margin-right: -100px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between; }

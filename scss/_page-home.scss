@@ -1,0 +1,15 @@
+#home {
+    background: linear-gradient(to bottom, #fafafa 30%, #fff 30%);
+
+    #search-box {
+        background: #FFFFFF;
+        box-shadow: 0 2px 15px 0 rgba(0,0,0,0.10);
+        border-radius: 100px;
+        padding: 1em 1em 1em 1.5em;
+        position: relative;
+        margin-right: -100px;
+        z-index: 1; 
+        display: flex;
+        justify-content: space-between;
+    } 
+}

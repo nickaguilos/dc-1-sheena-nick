@@ -5,7 +5,7 @@
 	margin: 0 auto;
 	gap: 1.5em;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 100px 1fr 1fr 1fr 1fr;
 }
 
 #site-head {
@@ -30,5 +30,12 @@
 
 #hero-image {
 	grid-column: 6 / 13;
-	grid-row-start: 1;
+	grid-row: 1 / 4;
+	max-height: 800px;
+	overflow: hidden;
+}
+
+#site-content {
+	grid-column: 1 / -1;
+	grid-row-start: 4;
 }

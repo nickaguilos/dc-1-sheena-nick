@@ -1,0 +1,13 @@
+.card {
+    background: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.10);
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.grid-of-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
