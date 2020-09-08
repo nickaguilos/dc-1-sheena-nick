@@ -1,8 +1,6 @@
 .grid {
     &.results {
         grid-template-rows: 50px 300px 1fr;
-
-       
             #content-grid {
                 grid-column: 4 / 13;
                 grid-row-start: 3;
@@ -12,7 +10,6 @@
                 grid-column: 1 / 4;
                 grid-row-start: 3;
             }
-        
     }
 
     #accordion {
@@ -48,7 +45,7 @@
         grid-row-start: 2;
         max-height: 800px;
         overflow: hidden;
-        background: url(../web/images/hero/results-hero.jpg);
+        background: url(../images/hero/results-hero.jpg);
         background-size: cover;
         background-position: center;
         padding: 3rem 6rem;
@@ -56,6 +53,7 @@
         flex-direction: column;
         align-items: start;
         justify-content: center;
+        margin-top: 50px;
     }
 
 }

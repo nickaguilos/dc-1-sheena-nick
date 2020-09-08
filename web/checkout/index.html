@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout | Furniture Source</title>
+
+        <link rel="stylesheet" href="../css/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body class="grid checkout">
+        <header id="site-head">
+            <a href="/web/home/" id="brand"><img src="../images/logos/logo@2x.png" alt="Furniture Source" /></a>
+
+            <div class="">
+                <a class="dot">SHIPPING</a>
+                <a class="dot">PAYMENT</a>
+                <a class="dot">ORDER SUMMARY</a>
+            </div>
+        </header>
+
+        <div id="content-grid">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="shipping">
+                        <h4>SHIPPING DETAILS</h4>
+                            <form action="">
+                                <p>
+                                    <label for="">First Name</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">Last Name</label>
+                                    <input type="text" />
+                                </p>
+                                <p class="full-width">
+                                    <label for="">Shipping Address</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">State</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">Zip</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">Email</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">Phone</label>
+                                    <input type="text" />
+                                </p>
+                            </form>
+
+                        <div class="display-flex">
+                            <a class="prev" onclick="plusSlides(-1)">Return to Cart</a>
+                            <a class="button primary next" onclick="plusSlides(1)">Continue</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="payment">
+                        <h4 class="nomargin bold">PAYMENT DETAILS</h4>
+                        <!-- <div class="row padbottom">
+                                <div class="col span_4 card muted pad20 center">
+                                    <img src="../images/credit-card.png" alt="" srcset="" />
+                                    <p class="nomargin margintop5">DEBIT CARD</p>
+                                </div>
+
+                                <div class="col span_4 card bordered pad20 center">
+                                    <img src="../images/credit-card.png" alt="" srcset="" />
+                                    <p class="nomargin margintop5">CREDIT CARD</p>
+                                </div>
+
+                                <div class="col span_4 card bordered pad20 center">
+                                    <img src="../images/credit-card.png" alt="" srcset="" />
+                                    <p class="nomargin margintop5">WALLET</p>
+                                </div>
+                            </div> -->
+
+                            <form action="">
+                                <p class="full-width">
+                                    <label for="">Card Holder Name</label>
+                                    <input type="text" />
+                                </p>
+                                <p class="full-width">
+                                    <label for="">Card Number</label>
+                                    <input type="text" />
+                                </p>
+                                <div class="three-col">
+                                <p>
+                                    <label for="">Month</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">Date</label>
+                                    <input type="text" />
+                                </p>
+                                <p>
+                                    <label for="">CVV</label>
+                                    <input type="text" />
+                                </p>
+                            </div>
+                            </form>
+
+                        <div class="display-flex justify-space-between align-items-center margintop50">
+                            <a class="prev" onclick="plusSlides(-1)">Return to Shipping</a>
+                            <a class="button primary next" onclick="plusSlides(1)">Continue</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="order-summary">
+                        <h4 class="nomargin bold">ORDER SUMMARY</h4>
+                            <form action="">
+                                <strong>Shipping Info</strong><br />
+                                <p>
+                                    <label for="">First Name</label>
+                                    <span>Juan</span>
+                                </p>
+                                <p>
+                                    <label for="">Last Name</label>
+                                    <span>Dela Cruz</span>
+                                </p>
+                                <p class="full-width">
+                                    <label for="">Shipping Address</label>
+                                    <span>7685 St. Paul Road San Antonio Village Makati Metro Manila, Philippines</span>
+                                </p>
+                                <p>
+                                    <label for="">Email</label>
+                                    <span>jdelacruz@gmail.com</span>
+                                </p>
+                                <p>
+                                    <label for="">Phone</label>
+                                    <span>09-xxx-xxxxx</span>
+                                </p>
+
+                                <strong>Payment Info</strong>
+                                <p class="full-width">
+                                    <label for="">Card Holder Name</label>
+                                    <span>Juan Dela Cruz</span>
+                                </p>
+                                <p class="full-width">
+                                    <label for="">Card Number</label>
+                                    <span>xxxxxxxxxxxxx8903</span>
+                                </p>
+                                <p>
+                                    <label for="">Month</label>
+                                    <span>09/27</span>
+                                </p>
+                                <p>
+                                    <label for="">CVV</label>
+                                    <span>027</span>
+                                </p>
+                            </form>
+
+                        <div class="display-flex justify-space-between align-items-center margintop50">
+                            <a class="prev" onclick="plusSlides(-1)">Return to Payment</a>
+                            <a class="button primary next" onclick="plusSlides(1)">Place Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="side-grid">
+            <h4>ITEMS</h4>
+            <div class="card">
+                <div class="display-flex">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/random/150x150" alt="" />
+                    </a>
+
+                    <div class="">
+                        <p>Lorem Ipsum</p>
+                        <p>Color</p>
+
+                        <div class="display-flex">
+                            <div class="">
+                                <p>Qty: 1</p>
+                            </div>
+                            <div class="">
+                                <span>$9.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display-flex">
+                    <a href="#">
+                        <img src="https://source.unsplash.com/random/150x150" alt="" />
+                    </a>
+
+                    <div class="">
+                        <p>Lorem Ipsum</p>
+                        <p>Color</p>
+
+                        <div class="display-flex">
+                            <div class="">
+                                <p>Qty: 1</p>
+                            </div>
+                            <div class="">
+                                <span>$9.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="minimalmargin" />
+
+                <div class="display-flex">
+                    <div class="">
+                        <p>Subtotal</p>
+                        <p>Shipping</p>
+                        <p>Tax</p>
+                        <strong>Total</strong>
+                    </div>
+                    <div class="">
+                        <p>$18.00</p>
+                        <p>$5.00</p>
+                        <p>$0.90</p>
+                        <strong>$23.90</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</html>
