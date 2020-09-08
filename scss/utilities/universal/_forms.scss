@@ -93,6 +93,13 @@ form {
                 }
             }
 
+            &.gray {
+                border-radius: 3px;
+                padding: 10px;
+                background-color: #f1f1f1;
+                border: none;
+            }
+
             &.bordered-error {
                 border-color: variables.$red;
 

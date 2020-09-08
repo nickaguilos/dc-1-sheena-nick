@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Checkout Page</title>
+        <link rel="stylesheet" type="text/css" href="../css/desktop-template.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="autodeal">
+            <main role="main">
+                <div class="container padbottom40">
+                    <header class="center padtop40">
+                        <div>
+                            <img src="../images/fs-logo.png" alt="" srcset="" />
+                        </div>
+
+                        <div class="marginbottom margintop20">
+                            <div id="new-car" class="hoverdropdown">
+                                <a class="darklink pad marginleft bold dot" onclick="currentSlide(1)">SHIPPING</a>
+                                <a class="darklink pad marginleft dot" onclick="currentSlide(2)">PAYMENT</a>
+                                <a class="darklink pad marginleft dot" onclick="currentSlide(3)">ORDER SUMMARY</a>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="content-wrapper margintop30">
+                        <section class="row gutters">
+                            <!-- Main content -->
+                            <div class="col span_8">
+                                <div class="slideshow-container">
+                                    <div class="mySlides fade">
+                                        <div class="shipping">
+                                            <h4 class="nomargin bold">SHIPPING DETAILS</h4>
+                                            <form class="simple">
+                                                <div class="padtop30">
+                                                    <div class="row padbottom">
+                                                        <fieldset class="col span_6">
+                                                            <label for="first-name">First Name</label>
+                                                            <input type="text" id="first-name" class="gray" />
+                                                        </fieldset>
+
+                                                        <fieldset class="col span_6">
+                                                            <label for="last-name">Last Name</label>
+                                                            <input type="text" id="last-name" class="gray" />
+                                                        </fieldset>
+                                                    </div>
+
+                                                    <fieldset class="padbottom padright5">
+                                                        <label for="shipping-add">Shipping Address</label>
+                                                        <input type="email" id="shipping-add" class="gray" />
+                                                    </fieldset>
+
+                                                    <div class="row padbottom">
+                                                        <fieldset class="col span_6">
+                                                            <label for="state">State</label>
+                                                            <input type="text" id="state" class="gray" />
+                                                        </fieldset>
+
+                                                        <fieldset class="col span_6">
+                                                            <label for="zip">Zip Code</label>
+                                                            <input type="text" id="zip" class="gray" />
+                                                        </fieldset>
+                                                    </div>
+
+                                                    <div class="row padbottom">
+                                                        <fieldset class="col span_6">
+                                                            <label for="email">Email</label>
+                                                            <input type="email" id="email" class="gray" />
+                                                        </fieldset>
+
+                                                        <fieldset class="col span_6">
+                                                            <label for="contact-number">Phone</label>
+                                                            <input type="text" id="contact-number" class="gray" />
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <!-- End -->
+                                            </form>
+
+                                            <div class="display-flex justify-space-between align-items-center margintop50">
+                                                <a class="prev" onclick="plusSlides(-1)">Return to Cart</a>
+                                                <a class="button primary next" onclick="plusSlides(1)">Continue</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="payment">
+                                            <h4 class="nomargin bold">PAYMENT DETAILS</h4>
+                                            <form class="simple">
+                                                <div class="padtop30">
+                                                    <div class="row padbottom">
+                                                        <div class="col span_4 card muted pad20 center">
+                                                            <img src="../images/credit-card.png" alt="" srcset="" />
+                                                            <p class="nomargin margintop5">DEBIT CARD</p>
+                                                        </div>
+
+                                                        <div class="col span_4 card bordered pad20 center">
+                                                            <img src="../images/credit-card.png" alt="" srcset="" />
+                                                            <p class="nomargin margintop5">CREDIT CARD</p>
+                                                        </div>
+
+                                                        <div class="col span_4 card bordered pad20 center">
+                                                            <img src="../images/credit-card.png" alt="" srcset="" />
+                                                            <p class="nomargin margintop5">WALLET</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <fieldset class="padbottom padright5">
+                                                        <label for="card-name">Card Holder Name</label>
+                                                        <input type="text" id="card-name" class="gray" />
+                                                    </fieldset>
+
+                                                    <fieldset class="padbottom padright5">
+                                                        <label for="card-num">Card Number</label>
+                                                        <input type="text" id="card-num" class="gray" />
+                                                    </fieldset>
+
+                                                    <div class="row padbottom">
+                                                        <fieldset class="col span_4">
+                                                            <label for="month">Month</label>
+                                                            <input type="text" id="month" class="gray" />
+                                                        </fieldset>
+
+                                                        <fieldset class="col span_4">
+                                                            <label for="year">Year</label>
+                                                            <input type="text" id="year" class="gray" />
+                                                        </fieldset>
+
+                                                        <fieldset class="col span_4">
+                                                            <label for="cvv">CVV</label>
+                                                            <input type="text" id="cvv" class="gray" />
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <!-- End -->
+                                            </form>
+
+                                            <div class="display-flex justify-space-between align-items-center margintop50">
+                                                <a class="prev" onclick="plusSlides(-1)">Return to Shipping</a>
+                                                <a class="button primary next" onclick="plusSlides(1)">Continue</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <div class="order-summary">
+                                            <h4 class="nomargin bold">ORDER SUMMARY</h4>
+                                            <form class="simple">
+                                                <div class="padtop30">
+                                                    <div class="marginbottom20">
+                                                        <h5 class="nomargin bold padbottom borderbottom marginbottom20">Shipping Info</h5>
+                                                        <hr class="minimalmargin">
+                                                        <div class="row padbottom">
+                                                            <fieldset class="col span_6">
+                                                                <label for="first-name">First Name</label>
+                                                                <p class="nomargin">Juan</p>
+                                                            </fieldset>
+
+                                                            <fieldset class="col span_6">
+                                                                <label for="last-name">Last Name</label>
+                                                                <p class="nomargin">Dela Cruz</p>
+                                                            </fieldset>
+                                                        </div>
+
+                                                        <fieldset class="padbottom padright5">
+                                                            <label for="shipping-add">Shipping Address</label>
+                                                            <p class="nomargin">7685 St. Paul Road San Antonio Village Makati 
+                                                                Metro Manila, Philippines</p>
+                                                        </fieldset>
+
+                                                        <div class="row padbottom">
+                                                            <fieldset class="col span_6">
+                                                                <label for="email">Email</label>
+                                                                <p class="nomargin">jdelacruz@gmail.com</p>
+                                                            </fieldset>
+
+                                                            <fieldset class="col span_6">
+                                                                <label for="contact-number">Phone</label>
+                                                                <p class="nomargin">09-xxx-xxxxx</p>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        <h5 class="nomargin bold padbottom borderbottom marginbottom20">Payment Info</h5>
+                                                        <fieldset class="padbottom padright5">
+                                                            <label for="card-name">Card Holder Name</label>
+                                                            <p class="nomargin">Juan Dela Cruz</p>
+                                                        </fieldset>
+
+                                                        <fieldset class="padbottom padright5">
+                                                            <label for="card-num">Card Number</label>
+                                                            <p class="nomargin">xxxxxxxxxxx8093</p>
+                                                        </fieldset>
+
+                                                        <div class="row padbottom">
+                                                            <fieldset class="col span_6">
+                                                                <label for="month">Expiry Date</label>
+                                                                <p class="nomargin">09/27</p>
+                                                            </fieldset>
+
+                                                            <fieldset class="col span_6">
+                                                                <label for="cvv">CVV</label>
+                                                                <p class="nomargin">027</p>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- End -->
+                                            </form>
+
+                                            <div class="display-flex justify-space-between align-items-center margintop50">
+                                                <a class="prev" onclick="plusSlides(-1)">Return to Payment</a>
+                                                <a class="button primary next" onclick="plusSlides(1)">Place Order</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Side bar -->
+                            <aside class="col span_4">
+                                <h4 class="nomargin bold">ITEMS</h4>
+                                <div class="card bordered pad20 margintop30">
+                                    <div class="display-flex align-items-center">
+                                        <a href="#" class="blocklink img-wrapper">
+                                            <img src="https://source.unsplash.com/random/150x150" alt="" />
+                                        </a>
+
+                                        <div class="content-flex-wrapper marginleft20">
+                                            <p class="nomargin bold">Lorem Ipsum</p>
+                                            <p class="reducedopacity nomargin">Color</p>
+
+                                            <div class="display-flex justify-space-between align-items-center">
+                                                <div class="">
+                                                    <p class="reducedopacity nomargin">Qty: 1</p>
+                                                </div>
+                                                <div class="">
+                                                    <span class="nomargin bold">$9.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="display-flex align-items-center margintop20">
+                                        <a href="#" class="blocklink img-wrapper">
+                                            <img src="https://source.unsplash.com/random/150x150" alt="" />
+                                        </a>
+
+                                        <div class="content-flex-wrapper marginleft20">
+                                            <p class="nomargin bold">Lorem Ipsum</p>
+                                            <p class="reducedopacity nomargin">Color</p>
+
+                                            <div class="display-flex justify-space-between align-items-center">
+                                                <div class="">
+                                                    <p class="reducedopacity nomargin">Qty: 1</p>
+                                                </div>
+                                                <div class="">
+                                                    <span class="nomargin bold">$9.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr class="minimalmargin" />
+
+                                    <div class="display-flex justify-space-between align-items-center">
+                                        <div class="">
+                                            <p class="reducedopacity nomargin">Subtotal</p>
+                                            <p class="reducedopacity nomargin">Shipping</p>
+                                            <p class="reducedopacity nomargin">Tax</p>
+                                            <p class="reducedopacity nomargin bold">Total</p>
+                                        </div>
+                                        <div class="">
+                                            <p class="nomargin">$18.00</p>
+                                            <p class="nomargin">$5.00</p>
+                                            <p class="nomargin">$0.90</p>
+                                            <p class="nomargin bold">$23.90</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides((slideIndex += n));
+        }
+
+        function currentSlide(n) {
+            showSlides((slideIndex = n));
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</html>
