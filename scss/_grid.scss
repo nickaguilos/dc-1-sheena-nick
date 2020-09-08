@@ -8,21 +8,6 @@
 	grid-template-rows: 50px 100px 1fr 1fr 1fr 1fr;
 }
 
-#site-head {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1em 0;
-	grid-column: 1 / -1;
-	grid-row-start: 1;
-	margin-top: 50px;
-	z-index: 1;
-
-	#brand {
-		max-width: 50px;
-	}
-}
-
 #search-and-intro {
 	grid-column: 1 / 6;
 	grid-row-start: 3;

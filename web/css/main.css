@@ -23,18 +23,6 @@ a {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 50px 100px 1fr 1fr 1fr 1fr; }
 
-#site-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em 0;
-  grid-column: 1 / -1;
-  grid-row-start: 1;
-  margin-top: 50px;
-  z-index: 1; }
-  #site-head #brand {
-    max-width: 50px; }
-
 #search-and-intro {
   grid-column: 1 / 6;
   grid-row-start: 3; }
@@ -113,6 +101,18 @@ input[type="text"] {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em; }
+
+#site-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+  grid-column: 1 / -1;
+  grid-row-start: 1;
+  margin-top: 50px;
+  z-index: 1; }
+  #site-head #brand {
+    max-width: 50px; }
 
 #home {
   background: linear-gradient(to bottom, #fafafa 30%, #fff 30%); }
