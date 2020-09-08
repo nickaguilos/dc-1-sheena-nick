@@ -19,13 +19,42 @@
         bottom: 0;
         left: 0;
         width: 100vw;
-        padding: 2em 0;
+        padding: 1em 0;
         border-top: 1px dotted #EEE;
         background: #FFF;
+        vertical-align: center;
 
         > div {
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .img-wrapper {
+        img {
+            margin-bottom: -10px;
+        }
+    }
+
+    .options {
+        list-style-type: none;
+        padding: 0;
+        margin: 2em 0;
+
+        li {
+            border-top: 1px solid #EEE;
+            padding: 1em 0;
+
+            &:last-child {
+                border-bottom: 1px solid #EEE;
+            }
+        }
+
+        strong {
+            display: block;
         }
     }
 
@@ -36,6 +65,7 @@
             grid-template-areas: 
             "img img img img"
             "asd asd asd asd";
+            margin-bottom: 5em; //to account for fixed bar at bottom
         }
 
         aside {

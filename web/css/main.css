@@ -77,7 +77,7 @@ button, .button {
   color: #fff;
   font-size: 1.125em;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
   transition: all, 0.1s;
   padding: 0.5em 2em;
@@ -87,6 +87,14 @@ button, .button {
     cursor: pointer; }
   button.round, .button.round {
     border-radius: 100px; }
+  button.small, .button.small {
+    font-size: 0.75em; }
+  button.border, .button.border {
+    background-color: transparent;
+    color: #303030;
+    border: 1px solid #AAA; }
+  button.icon i, .button.icon i {
+    position: relative; }
   button.yellow, .button.yellow {
     background-color: #FFCA1E;
     color: #303030; }
@@ -157,17 +165,37 @@ input[type="text"] {
   bottom: 0;
   left: 0;
   width: 100vw;
-  padding: 2em 0;
+  padding: 1em 0;
   border-top: 1px dotted #EEE;
-  background: #FFF; }
+  background: #FFF;
+  vertical-align: center; }
   #product #sticky-action > div {
     max-width: 1200px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+#product .img-wrapper img {
+  margin-bottom: -10px; }
+
+#product .options {
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0; }
+  #product .options li {
+    border-top: 1px solid #EEE;
+    padding: 1em 0; }
+    #product .options li:last-child {
+      border-bottom: 1px solid #EEE; }
+  #product .options strong {
+    display: block; }
 
 @media screen and (max-width: 700px) {
   #product #site-content {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "img img img img" "asd asd asd asd"; }
+    grid-template-areas: "img img img img" "asd asd asd asd";
+    margin-bottom: 5em; }
   #product aside {
     grid-area: asd;
     padding: 1em; }
