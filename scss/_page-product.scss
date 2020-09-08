@@ -1,3 +1,16 @@
 #product {
-    
+    #site-content {
+        grid-row-start: 2;
+        padding-top: 5em;
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        gap: 1em;
+    }
+
+    aside {
+        > div {
+            position: sticky;
+            top: 2em;
+        }
+    }
 }

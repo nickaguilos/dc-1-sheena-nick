@@ -40,7 +40,7 @@ a {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1em;
   font-weight: bold;
-  font-family: "Adobe Garamond", serif; }
+  font-family: "PT Serif", serif; }
   @media (max-width: 320px) {
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
       line-height: 1.3em; } }
@@ -112,7 +112,9 @@ input[type="text"] {
   margin-top: 50px;
   z-index: 1; }
   #site-head #brand {
-    max-width: 50px; }
+    max-width: 50px;
+    position: relative;
+    left: -137px; }
   #site-head a {
     padding: 1em; }
 
@@ -128,6 +130,17 @@ input[type="text"] {
     z-index: 1;
     display: flex;
     justify-content: space-between; }
+
+#product #site-content {
+  grid-row-start: 2;
+  padding-top: 5em;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 1em; }
+
+#product aside > div {
+  position: sticky;
+  top: 2em; }
 
 .grid.results {
   grid-template-rows: 50px 300px 1fr; }
