@@ -1,0 +1,18 @@
+button, .button {
+    background-color: $blue;
+    color: #fff;
+    font-size: 1.125em;
+    font-family: $sans-serif;
+    border: none;
+    transition: all, 0.1s;
+
+    &:hover {
+        background-color: $light-blue;
+        cursor: pointer;
+    }
+
+    &.round {
+        border-radius: 100px;
+        padding: 0.5em 2em;
+    }
+}

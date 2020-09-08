@@ -1,0 +1,9 @@
+input[type="text"] {
+    font-size: 1.125em;
+    border: none;
+    outline: none;
+
+    &:focus {
+        color: $dark-gray;
+    }
+}

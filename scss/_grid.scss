@@ -1,0 +1,41 @@
+/* Grid */
+.grid {
+	display: grid;
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 1.5em;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 50px 100px 1fr 1fr 1fr 1fr;
+}
+
+#site-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 0;
+	grid-column: 1 / -1;
+	grid-row-start: 1;
+	margin-top: 50px;
+	z-index: 1;
+
+	#brand {
+		max-width: 50px;
+	}
+}
+
+#search-and-intro {
+	grid-column: 1 / 6;
+	grid-row-start: 3;
+}
+
+#hero-image {
+	grid-column: 6 / 13;
+	grid-row: 1 / 4;
+	max-height: 800px;
+	overflow: hidden;
+}
+
+#site-content {
+	grid-column: 1 / -1;
+	grid-row-start: 4;
+}
