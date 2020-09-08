@@ -63,6 +63,9 @@ h5, .h5 {
 h6, .h6 {
   font-size: 0.8em; }
 
+footnote {
+  opacity: 0.5; }
+
 .subheading {
   font-size: 1.2em;
   margin-top: -.35em;
@@ -74,14 +77,21 @@ button, .button {
   color: #fff;
   font-size: 1.125em;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
   border: none;
-  transition: all, 0.1s; }
+  transition: all, 0.1s;
+  padding: 0.5em 2em;
+  border-radius: 8px; }
   button:hover, .button:hover {
     background-color: #003E73;
     cursor: pointer; }
   button.round, .button.round {
-    border-radius: 100px;
-    padding: 0.5em 2em; }
+    border-radius: 100px; }
+  button.yellow, .button.yellow {
+    background-color: #FFCA1E;
+    color: #303030; }
+    button.yellow:hover, .button.yellow:hover {
+      background-color: #FFD95F; }
 
 input[type="text"] {
   font-size: 1.125em;
@@ -136,11 +146,39 @@ input[type="text"] {
   padding-top: 5em;
   display: grid;
   grid-template-columns: 40% 1fr;
-  gap: 1em; }
+  gap: 2em; }
 
 #product aside > div {
   position: sticky;
   top: 2em; }
+
+#product #sticky-action {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em 0;
+  border-top: 1px dotted #EEE;
+  background: #FFF; }
+  #product #sticky-action > div {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+@media screen and (max-width: 700px) {
+  #product #site-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "img img img img" "asd asd asd asd"; }
+  #product aside {
+    grid-area: asd;
+    padding: 1em; }
+  #product .img-wrapper {
+    grid-area: img;
+    display: flex;
+    overflow-x: scroll;
+    height: 300px;
+    width: 100vw; }
+  #product #sticky-action {
+    padding: 2em 1em; } }
 
 .grid.results {
   grid-template-rows: 50px 300px 1fr; }
