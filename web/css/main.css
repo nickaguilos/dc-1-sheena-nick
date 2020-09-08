@@ -113,6 +113,8 @@ input[type="text"] {
   z-index: 1; }
   #site-head #brand {
     max-width: 50px; }
+  #site-head a {
+    padding: 1em; }
 
 #home {
   background: linear-gradient(to bottom, #fafafa 30%, #fff 30%); }
