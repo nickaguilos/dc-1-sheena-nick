@@ -126,3 +126,42 @@ input[type="text"] {
     z-index: 1;
     display: flex;
     justify-content: space-between; }
+
+.grid.results {
+  grid-template-rows: 50px 300px 1fr; }
+  .grid.results #content-grid {
+    grid-column: 4 / 13;
+    grid-row-start: 3; }
+  .grid.results #side-grid {
+    grid-column: 1 / 4;
+    grid-row-start: 3; }
+
+.grid #accordion.custom-accordion > div {
+  display: grid;
+  height: auto; }
+  .grid #accordion.custom-accordion > div label {
+    margin-bottom: 5px; }
+
+.grid .card p {
+  margin: 0; }
+
+.grid .card .display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .grid .card .display-flex.cart-heart img:first-child {
+    margin-right: 5px; }
+
+.grid .top-header {
+  grid-column: 1 / -1;
+  grid-row-start: 2;
+  max-height: 800px;
+  overflow: hidden;
+  background: url(https://images.squarespace-cdn.com/content/v1/5a454ab9fe54efc3d3028316/1548299934309-QW433MJS1A5NZC1OU8X1/ke17ZwdGBToddI8pDm48kN7zwi1yWXn97EQ3WcuDO-p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0hGaawTDWlunVGEFKwsEdnFCUZEUia1P_znLl9gH1OWS7W94HzZkDgsCoD0lMydyrQ/header+img.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center; }
