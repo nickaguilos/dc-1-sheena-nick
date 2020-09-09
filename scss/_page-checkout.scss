@@ -1,19 +1,33 @@
 .grid {
     &.checkout {
         max-width: 1000px;
-        grid-template-rows: 50px 300px 1fr;
+        // grid-template-rows: 50px 300px 1fr;
 
         h4 { color: $blue;}
 
         #site-head {
             flex-direction: column;
             margin-top: 0;
+
+
+            .dot {
+                cursor: pointer;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                margin: 0 10px;
+              
+                &.active, &.dot:hover {
+                    font-weight: bold;
+                    color: $blue;
+                }
+            }
         }
         
         #content-grid {
             grid-column: 1 / 8;
             grid-row-start: 2;
             margin-top: 50px;
+            margin-bottom: 50px;
         }
         
         #side-grid {
@@ -38,6 +52,7 @@
             grid-template-columns: 1fr 1fr;
             grid-gap: 20px;
             margin-bottom: 50px;
+            overflow: hidden;
           
           label {
             display: block;
@@ -53,7 +68,7 @@
 
           .three-col {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 180px);
             gap: 1em;
           }
 
@@ -65,12 +80,71 @@
           }
         }
 
+        .card {
+            p {
+                margin: 0;
+            }
+            .display-flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &.items {
+                    a {
+                        flex: 1;
+                        margin-right: 20px;
+                    }
+                    div {
+                        flex: 2;
+                    }
+                }
+            }
+        }
+
         .button {
             padding: 10px;
             border-radius: 3px;
 
             &:hover {
                 color: white;
+            }
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            padding: 0 2em;
+        }
+        @media screen and (max-width: 500px){
+            #side-grid {
+                display: none;
+            }
+
+            #content-grid {
+                grid-column: 2 / 12;
+
+                form {
+                    display: block;
+                    margin-bottom: 20px;
+    
+                    p,div {
+                        padding: 10px 0;
+                    }
+    
+                    .three-col {
+                        grid-template-columns: repeat(3, 30%);
+                    }
+                }
+
+                .display-flex {
+                    &.btn {
+                        flex-direction: column-reverse;
+
+                        a {
+                            width: -webkit-fill-available;
+                            text-align: center;
+                            margin: 10px 0;
+                        }
+                    }
+                }
             }
         }
     }

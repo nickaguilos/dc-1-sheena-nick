@@ -1,59 +1,92 @@
 .grid {
     &.results {
-        grid-template-rows: 50px 300px 1fr;
+        h2 { color: $blue;}
+        grid-template-rows: 50px 300px 1fr 50px;
+
+        #content-grid {
+            grid-column: 4 / 13;
+            grid-row-start: 3;
+        }
+        
+        #side-grid {
+            grid-column: 1 / 4;
+            grid-row-start: 3;
+        }
+    
+
+        #accordion {
+            // position: fixed;
+
+            &.custom-accordion > div {
+                display: grid;
+                height: auto;
+
+                label {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .card {
+            p {
+                margin: 0;
+            }
+            .display-flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &.cart-heart img:first-child{
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .top-header {
+            grid-column: 1 / -1;
+            grid-row-start: 2;
+            max-height: 800px;
+            overflow: hidden;
+            background: url(../images/hero/results-hero.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 3rem 6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 1024px) and (min-width: 768px) {
+            padding: 0 2em;
+        }
+
+        @media screen and (max-width: 768px) {
+            .grid-of-cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1em;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
             #content-grid {
-                grid-column: 4 / 13;
+                grid-column: 1 / 13;
                 grid-row-start: 3;
+                padding: 0 1em;
             }
             
             #side-grid {
-                grid-column: 1 / 4;
-                grid-row-start: 3;
+                display: none;
             }
-    }
 
-    #accordion {
-        // position: fixed;
-
-        &.custom-accordion > div {
-            display: grid;
-            height: auto;
-
-            label {
-                margin-bottom: 5px;
+            .top-header {
+                padding: 1em;
+                font-size: 0.8em;
             }
         }
-    }
-
-    .card {
-        p {
-            margin: 0;
-        }
-        .display-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            &.cart-heart img:first-child{
-                margin-right: 5px;
-            }
-        }
-    }
-
-    .top-header {
-        grid-column: 1 / -1;
-        grid-row-start: 2;
-        max-height: 800px;
-        overflow: hidden;
-        background: url(../images/hero/results-hero.jpg);
-        background-size: cover;
-        background-position: center;
-        padding: 3rem 6rem;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        margin-top: 50px;
+        
     }
 
 }
