@@ -130,14 +130,16 @@ input[type="text"] {
 .card {
   background: #FFFFFF;
   border: 1px solid #F5F5F5;
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 1em; }
+  padding: 1em;
+  transition: all 0.2s; }
+  .card:hover {
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1); }
 
 .grid-of-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1em; }
+  gap: 2em; }
 
 #site-head {
   display: flex;
@@ -450,6 +452,11 @@ input[type="text"] {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+  #rooms #page-heading {
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #eee; }
   @media screen and (max-width: 1024px) and (min-width: 768px) {
     #rooms {
       padding: 0 2em; } }
