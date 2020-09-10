@@ -1,5 +1,5 @@
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: -apple-system, system-ui, sans-serif;
   font-size: 1em; }
 
 body {
@@ -85,11 +85,14 @@ footnote {
   opacity: 0.5;
   line-height: 1.2em; }
 
+@media screen and (max-width: 700px) {
+  font-size: 14px; }
+
 button, .button {
   background-color: #0058A3;
   color: #fff;
   font-size: 1.125em;
-  font-family: "Poppins", sans-serif;
+  font-family: -apple-system, system-ui, sans-serif;
   font-weight: 500;
   border: none;
   transition: all, 0.1s;
@@ -113,6 +116,9 @@ button, .button {
     color: #303030; }
     button.yellow:hover, .button.yellow:hover {
       background-color: #FFD95F; }
+  button.white, .button.white {
+    background-color: #fff;
+    color: #303030; }
 
 input[type="text"] {
   font-size: 1.125em;
@@ -146,6 +152,18 @@ input[type="text"] {
     max-width: 250px; }
   #site-head a {
     padding: 1em; }
+    #site-head a.active {
+      position: relative; }
+      #site-head a.active:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background-color: #FFCA1E;
+        bottom: -5px;
+        border-radius: 100px;
+        left: 45%; }
 
 #site-head-mobile {
   display: none; }
@@ -195,6 +213,8 @@ input[type="text"] {
     z-index: 1;
     display: flex;
     justify-content: space-between; }
+    #home #search-box img {
+      display: none; }
   #home #search-and-intro {
     grid-column: 1 / 6;
     grid-row-start: 3; }
@@ -202,19 +222,49 @@ input[type="text"] {
     grid-column: 6 / 13;
     grid-row: 1 / 4;
     max-height: 800px;
-    overflow: hidden; }
-  @media screen and (max-width: 700px) {
-    #home #site-content {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "sh sh sh sh" "si si si si" "hi hi hi hi" "sf sf sf sf"; }
+    overflow: hidden;
+    position: relative; }
+    #home #hero-image .caption {
+      display: flex;
+      color: #fff;
+      position: absolute;
+      bottom: 16px;
+      padding: 1em;
+      justify-content: space-between;
+      align-items: center;
+      width: 95%; }
+
+@media screen and (max-width: 700px) {
+  #home {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "sh sh sh sh" "si si si si" "si si si si" "hi hi hi hi" "sf sf sf sf"; }
     #home #site-head {
       grid-area: sh; }
     #home #search-and-intro {
-      grid-area: si; }
+      grid-area: si;
+      margin: 1em;
+      text-align: center; }
+      #home #search-and-intro h1 {
+        font-size: 2em; }
+      #home #search-and-intro form {
+        margin: 0; }
+      #home #search-and-intro button {
+        padding: 0.5em 1em; }
+        #home #search-and-intro button img {
+          display: inline-block;
+          width: 1em; }
+        #home #search-and-intro button span {
+          display: none; }
     #home #hero-image {
       grid-area: hi; }
+      #home #hero-image .caption {
+        flex-direction: column;
+        text-align: center; }
+        #home #hero-image .caption a {
+          margin-top: 1em; }
     #home #site-footer {
-      grid-area: sf; } }
+      grid-area: sf;
+      margin: 1em; } }
 
 .grid.results {
   grid-template-rows: 50px 300px 1fr 50px; }

@@ -12,6 +12,10 @@
         z-index: 1; 
         display: flex;
         justify-content: space-between;
+
+        img {
+            display: none;
+        }
     } 
 
     #search-and-intro {
@@ -24,33 +28,76 @@
         grid-row: 1 / 4;
         max-height: 800px;
         overflow: hidden;
-    }
+        position: relative;
 
-    // When size falls below 700px
-    @media screen and (max-width: 700px) {
-        #site-content {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas: 
-            "sh sh sh sh"
-            "si si si si"
-            "hi hi hi hi"
-            "sf sf sf sf";
+        .caption {
+            display: flex;
+            color: #fff;
+            position: absolute;
+            bottom: 16px;
+            padding: 1em;
+            justify-content: space-between;
+            align-items: center;
+            width: 95%;
         }
+    }
+}
+
+// When size falls below 700px
+@media screen and (max-width: 700px) {
+    #home {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "sh sh sh sh"
+        "si si si si"
+        "si si si si"
+        "hi hi hi hi"
+        "sf sf sf sf";
 
         #site-head {
             grid-area: sh;
         }
-
+    
         #search-and-intro {
             grid-area: si;
-        }
+            margin: 1em;
+            text-align: center;
 
+            h1 {
+                font-size: 2em;
+            }
+
+            form {
+                margin: 0;
+            }
+            button {
+                padding: 0.5em 1em;
+                img {
+                    display: inline-block;
+                    width: 1em;
+                }
+                span {
+                    display: none;
+                }
+            }
+        }
+    
         #hero-image {
             grid-area: hi;
-        }
 
+            .caption {
+                flex-direction: column;
+                text-align: center;
+
+                a {
+                    margin-top: 1em;
+                }
+            }
+        }
+    
         #site-footer {
             grid-area: sf;
+            margin: 1em;
         }
     }
 }

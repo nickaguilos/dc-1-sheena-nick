@@ -13,7 +13,22 @@
     }
     
     a {
-        padding: 1em;
+		padding: 1em;
+		
+		&.active {
+			position: relative;
+			&:after {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				width: 7px;
+				height: 7px;
+				background-color: $yellow;
+				bottom: -5px;
+				border-radius: 100px;
+				left: 45%;
+			}
+		}
     }
 }
 
