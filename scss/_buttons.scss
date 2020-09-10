@@ -42,4 +42,9 @@ button, .button {
             background-color: $light-yellow;
         }
     }
+
+    &.white {
+        background-color: #fff;
+        color: $dark-gray;
+    }
 }
