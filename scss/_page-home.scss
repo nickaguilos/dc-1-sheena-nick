@@ -1,5 +1,6 @@
 #home {
-    background: linear-gradient(to bottom, #fafafa 30%, #fff 30%);
+    background: #fafafa;
+    grid-template-rows: 50px 100px 1fr;
 
     #search-box {
         background: #FFFFFF;
@@ -12,4 +13,16 @@
         display: flex;
         justify-content: space-between;
     } 
+
+    #search-and-intro {
+        grid-column: 1 / 6;
+        grid-row-start: 3;
+    }
+    
+    #hero-image {
+        grid-column: 6 / 13;
+        grid-row: 1 / 4;
+        max-height: 800px;
+        overflow: hidden;
+    }
 }
