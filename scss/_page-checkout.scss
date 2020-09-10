@@ -103,6 +103,15 @@
             }
         }
 
+        #order-summary {
+            grid-column: 1 / -1;
+            grid-row-start: 4;
+
+            img {
+                width: 50%;
+            }
+        }
+
         .button {
             padding: 10px;
             border-radius: 3px;

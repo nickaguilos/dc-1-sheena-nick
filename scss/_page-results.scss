@@ -1,6 +1,5 @@
 .grid {
     &.results {
-        h2 { color: $blue;}
         grid-template-rows: 50px 300px 1fr 50px;
 
         #content-grid {
