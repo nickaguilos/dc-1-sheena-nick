@@ -168,6 +168,18 @@ input[type="text"] {
     grid-row: 1 / 4;
     max-height: 800px;
     overflow: hidden; }
+  @media screen and (max-width: 700px) {
+    #home #site-content {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "sh sh sh sh" "si si si si" "hi hi hi hi" "sf sf sf sf"; }
+    #home #site-head {
+      grid-area: sh; }
+    #home #search-and-intro {
+      grid-area: si; }
+    #home #hero-image {
+      grid-area: hi; }
+    #home #site-footer {
+      grid-area: sf; } }
 
 .grid.results {
   grid-template-rows: 50px 300px 1fr 50px; }
