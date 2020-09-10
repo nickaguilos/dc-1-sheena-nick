@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="20px" viewBox="0 0 51 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sale label</title>
+    <g id="Primer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Design-Moodboard" transform="translate(-732.000000, -1249.000000)">
+            <g id="Group-13" transform="translate(35.500000, 1077.000000)">
+                <g id="Group-12" transform="translate(553.500000, 170.000000)">
+                    <g id="sale-label" transform="translate(144.500000, 2.000000)">
+                        <rect id="Rectangle" fill="#D0021B" x="0" y="0" width="48" height="20" rx="5"></rect>
+                        <text id="Sale" font-family="Poppins-Bold, Poppins" font-size="14" font-weight="bold" fill="#FFFFFF">
+                            <tspan x="8.5" y="15">Sale</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

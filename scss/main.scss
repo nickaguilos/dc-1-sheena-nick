@@ -6,7 +6,11 @@
 @import 'forms';
 @import 'cards';
 
+// Sections
+@import 'section-head';
+
 // Pages
 @import 'page-home';
 @import 'page-results';
 @import 'page-checkout';
+@import 'page-product';

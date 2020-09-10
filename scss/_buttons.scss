@@ -3,8 +3,11 @@ button, .button {
     color: #fff;
     font-size: 1.125em;
     font-family: $sans-serif;
+    font-weight: 500;
     border: none;
     transition: all, 0.1s;
+    padding: 0.5em 2em;
+    border-radius: 8px;
 
     &:hover {
         background-color: $light-blue;
@@ -13,6 +16,30 @@ button, .button {
 
     &.round {
         border-radius: 100px;
-        padding: 0.5em 2em;
+    }
+
+    &.small {
+        font-size: 0.75em
+    }
+
+    &.border {
+        background-color: transparent;
+        color: $dark-gray;
+        border: 1px solid #AAA;
+    }
+
+    &.icon {
+        i {
+            position: relative;
+        }
+    }
+
+    &.yellow {
+        background-color: $yellow;
+        color: $dark-gray;
+
+        &:hover {
+            background-color: $light-yellow;
+        }
     }
 }

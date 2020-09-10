@@ -1,13 +1,17 @@
 .grid {
     &.checkout {
         max-width: 1000px;
-        // grid-template-rows: 50px 300px 1fr;
+        grid-template-rows: 100px 100px 1fr 1fr 1fr 1fr;
 
         h4 { color: $blue;}
 
         #site-head {
             flex-direction: column;
             margin-top: 0;
+
+            #brand {
+                left: 0;
+            }
 
 
             .dot {
