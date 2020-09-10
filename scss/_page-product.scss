@@ -33,6 +33,7 @@
         }
     }
 
+
     .img-wrapper {
         img {
             margin-bottom: -10px;
@@ -84,5 +85,14 @@
         #sticky-action {
             padding: 2em 1em;
         }
+    }
+}
+
+#product-landing-page {
+    #page-heading {
+        text-align: center;
+        padding: 2em 0;
+        margin-bottom: 2em;
+        border-bottom: 1px solid #eee;
     }
 }

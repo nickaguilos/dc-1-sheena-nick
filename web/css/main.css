@@ -23,8 +23,7 @@ a {
   grid-template-columns: repeat(12, 1fr); }
 
 #site-content {
-  grid-column: 1 / -1;
-  grid-row-start: 4; }
+  grid-column: 1 / -1; }
 
 #site-footer {
   grid-column: 1/-1;
@@ -81,7 +80,7 @@ footnote {
 
 .subheading {
   font-size: 1.2em;
-  margin-top: -.35em;
+  margin-top: -1em;
   opacity: 0.5;
   line-height: 1.2em; }
 
@@ -189,22 +188,26 @@ input[type="text"] {
       bottom: 0;
       top: 67px;
       text-align: center;
-      font-size: 3em; }
+      padding-top: 3em; }
     .topnav a {
-      color: black;
+      color: #303030;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;
+      font-size: 25px;
       display: block; }
       .topnav a:hover {
         background-color: #ddd;
-        color: black; }
+        color: #303030; }
       .topnav a.icon {
         background: none;
         display: block;
         position: absolute;
         right: 0;
         top: 0; }
+        .topnav a.icon img {
+          position: relative;
+          right: -20px;
+          top: -2px; }
     .topnav img {
       width: 60%; } }
 
@@ -486,6 +489,12 @@ input[type="text"] {
     width: 100vw; }
   #product-detail #sticky-action {
     padding: 2em 1em; } }
+
+#product-landing-page #page-heading {
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #eee; }
 
 #rooms {
   grid-template-rows: 50px 1fr; }

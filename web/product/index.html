@@ -11,20 +11,41 @@
 </head>
 <body id="product-landing-page" class="grid">
     <header id="site-head">
+        <a href="#" id="brand"><img src="../images/logos/logo-full@2x.png" alt="Furniture Source"></a>
+
         <div id="nav-1">
-            <a href="rooms.html">Rooms</a>
-            <a href="../product/">Products</a>
+            <a href="../home/">Home</a>
+            <a href="../rooms/">Rooms</a>
+            <a href="../product/" class="active">Products</a>
             <a href="inspiration.html">Inspiration</a>
-        </div>
-            <a href="../home/" id="brand"><img src="../images/logos/logo@2x.png" alt="Furniture Source"></a>
-        <div>
             <a href="sale-items.html">Sale Items</a>
             <a href="../checkout/">My Cart</a>
         </div>
     </header>
 
+    <header id="site-head-mobile">
+        <div class="topnav">
+            <a href="#" id="brand"><img src="../images/logos/logo-full@2x.png" alt="Furniture Source"></a>
+            <div id="myLinks">
+                <a href="#">Rooms</a>
+                <a href="#">Products</a>
+                <a href="#">Inspiration</a>
+                <a href="#">Sale Items</a>
+                <a href="#">My Cart</a>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="../images/icon/burger.png" alt="">
+        </a>
+        </div>
+    </header>
+
     <main id="site-content">
-        <h2>Categories</h2>
+        <header id="page-heading">
+            <h1>Products</h1>
+            <p class="subheading">
+                Need a little something for that one specific spot in your home?
+            </p>
+        </header>
         <div class="grid-of-cards">
             <article class="card">
                 <img src="../images/products/alternatives/malm-2-alt.webp" alt="">
@@ -57,5 +78,54 @@
             </article>
         </div>
     </main>
+
+    <footer id="site-footer">
+        <div class="pre-footer">
+            <article>
+                <strong>Helping you create beautiful homes</strong> <br>
+                <p>
+                    We carry a wide-range of items starting with large furniture such as beds, cabinets and tables, to the smallest of
+                    accessories such as table lamps, plants and picture frames to cater to your every design need.
+                </p>
+
+                <p>
+                    Bring your ideas to life with rewards, inspiration, discounts and a few surprises along the way
+                </p>
+            </article>
+
+            <nav>
+                <strong>Help</strong>
+                <a href="">Customer Service</a>
+                <a href="">FAQ</a>
+                <a href="">Track My Order</a>
+                <a href="">Contact Us</a>
+                <a href="">Feedback</a>
+            </nav>
+
+            <nav>
+                <strong>Shop & Learn</strong>
+                <a href="">Buying Guides</a>
+                <a href="">Gift Cards</a>
+                <a href="">Payment Options</a>
+            </nav>
+            
+            <nav>
+                <strong>About Furniture Source</strong>
+                <a href="">Jobs</a>
+                <a href="">Newsroom</a>
+                <a href="">Sustainability</a>
+                <a href="">Foundation</a>
+            </nav>
+        </div>
+
+        <nav class="post-footer">
+            <span>&copy; Furniture Source PH 2020</span>
+            <div>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Accessibility</a>
+            </div>
+        </nav>
+    </footer>
 </body>
 </html>
