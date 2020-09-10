@@ -358,3 +358,23 @@ input[type="text"] {
     width: 100vw; }
   #product #sticky-action {
     padding: 2em 1em; } }
+
+#rooms {
+  grid-template-rows: 50px 1fr; }
+  #rooms .card .display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    #rooms {
+      padding: 0 2em; } }
+  @media screen and (max-width: 768px) {
+    #rooms .grid-of-cards {
+      grid-template-columns: repeat(2, 1fr); }
+    #rooms #brand {
+      left: 0; } }
+  @media screen and (max-width: 425px) {
+    #rooms #site-content {
+      padding: 0 1em; }
+    #rooms .grid-of-cards {
+      grid-template-columns: repeat(1, 1fr); } }
