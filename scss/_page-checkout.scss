@@ -13,12 +13,10 @@
                 left: 0;
             }
 
-
             .dot {
                 cursor: pointer;
                 display: inline-block;
                 transition: background-color 0.6s ease;
-                margin: 0 10px;
               
                 &.active, &.dot:hover {
                     font-weight: bold;
@@ -120,6 +118,10 @@
         @media screen and (max-width: 500px){
             #side-grid {
                 display: none;
+            }
+
+            .dot {
+                font-size: 12px;
             }
 
             #content-grid {

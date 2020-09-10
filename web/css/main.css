@@ -218,8 +218,7 @@ input[type="text"] {
     .grid.checkout #site-head .dot {
       cursor: pointer;
       display: inline-block;
-      transition: background-color 0.6s ease;
-      margin: 0 10px; }
+      transition: background-color 0.6s ease; }
       .grid.checkout #site-head .dot.active, .grid.checkout #site-head .dot.dot:hover {
         font-weight: bold;
         color: #0058A3; }
@@ -283,6 +282,8 @@ input[type="text"] {
   @media screen and (max-width: 500px) {
     .grid.checkout #side-grid {
       display: none; }
+    .grid.checkout .dot {
+      font-size: 12px; }
     .grid.checkout #content-grid {
       grid-column: 2 / 12; }
       .grid.checkout #content-grid form {
