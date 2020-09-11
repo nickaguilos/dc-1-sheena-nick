@@ -28,6 +28,15 @@ footnote {
     line-height: 1.2em;
 }
 
+.sale-label {
+    background-color: $red;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 0.5em 1em;
+}
+
 @media screen and (max-width: 700px) {
     font-size: 14px;
 }

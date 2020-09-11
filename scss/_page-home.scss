@@ -1,6 +1,9 @@
 #home {
     background: #fafafa;
     grid-template-rows: 50px 100px 1fr;
+    #site-head {
+        margin-top: 50px;
+    }
 
     #search-box {
         background: #FFFFFF;

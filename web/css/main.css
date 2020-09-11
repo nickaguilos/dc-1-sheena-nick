@@ -84,6 +84,14 @@ footnote {
   opacity: 0.5;
   line-height: 1.2em; }
 
+.sale-label {
+  background-color: #D0021B;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 100px;
+  padding: 0.5em 1em; }
+
 @media screen and (max-width: 700px) {
   font-size: 14px; }
 
@@ -96,7 +104,8 @@ button, .button {
   border: none;
   transition: all, 0.1s;
   padding: 0.5em 2em;
-  border-radius: 8px; }
+  border-radius: 8px;
+  display: inline-block; }
   button:hover, .button:hover {
     background-color: #003E73;
     cursor: pointer; }
@@ -137,8 +146,17 @@ input[type="text"] {
 
 .grid-of-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2em; }
+  .grid-of-cards .card, .grid-of-cards article {
+    text-align: center;
+    position: relative; }
+    .grid-of-cards .card img, .grid-of-cards article img {
+      margin-bottom: 1em; }
+  @media screen and (max-width: 400px) {
+    .grid-of-cards {
+      margin: 1em;
+      grid-template-columns: 1fr; } }
 
 #site-head {
   display: flex;
@@ -214,6 +232,8 @@ input[type="text"] {
 #home {
   background: #fafafa;
   grid-template-rows: 50px 100px 1fr; }
+  #home #site-head {
+    margin-top: 50px; }
   #home #search-box {
     background: #FFFFFF;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
@@ -495,6 +515,15 @@ input[type="text"] {
   padding: 2em 0;
   margin-bottom: 2em;
   border-bottom: 1px solid #eee; }
+
+#product-landing-page .article {
+  margin: 2em 0;
+  padding: 2em 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  #product-landing-page .article div {
+    max-width: 700px;
+    margin: 0 auto; }
 
 #rooms {
   grid-template-rows: 50px 1fr; }
